@@ -12,6 +12,8 @@ body{
     box-sizing: border-box;
 }
 
+/* SECTION 1 */
+
 .section1 {
         width: 100%;
         height: 100vh;
@@ -105,6 +107,8 @@ body{
     border: 2px solid white; 
 }
 
+/* SECTION 2 */
+
 .section2{
     background-color: rgb(234, 229, 229);
     text-align: center;
@@ -143,21 +147,32 @@ body{
     flex-direction: column;
     background-color: white;  
 }
+.subs .text h1{
+    color: #1A2039;
+
+}
+.subs3 .text2 h1{
+    color: #1A2039;
+}
+.section3 .text p{
+    text-align: center;
+}
 
 .section2 .subs3 {
     display: flex;
-    gap: 50px;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 60px;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 140px;
 }
 
-
+/* SECTION 3 */
 
 .section3 .columns {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 60vh;
 
 }
 .section3 .column{
@@ -166,14 +181,28 @@ body{
     flex-direction: column;
     width: 20%; 
     background-color: white;
-    margin: 10px; 
+    margin: 20px; 
     box-sizing: border-box; 
     padding: 20px;
     align-items: center;
     height: 50vh;
 }
+.section3 .rating{
+    color: yellow;
+    display: flex;
+    font-size: 24px;
+}
+.star {
+    margin-right: 10px; 
+}
 .section3 p{
-    padding-top: 50px;
+    padding-top: 40px;
+    line-height: 1.5;
+    color: #1A2039;
+
+}
+.section3 .text h1{
+    font-size: 40px;
 }
 
 .section3 .text {
@@ -196,7 +225,7 @@ body{
 .section3{
  background-color: #ddd;
  width: 100vw;
- height: 280vh;
+ height: 290vh;
 }
 
 .section3 .icons-container{
@@ -219,33 +248,43 @@ body{
     text-align: center;
     margin: 30px;
 }
-
-.section3 .subscribe-container{
+.subscribe {
     display: flex;
-    justify-content: space-evenly;
-    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
 }
-.section3 .subscribe-container .container {
+.subscribe-container{
+    background-color: #ffffff; 
+    border: 2px solid #333; 
+    width: 70%; 
+    height: 20vh;
     display: flex;
-    justify-content: center; 
-    /* max-width: 300px; */
+    justify-content: center;
+     flex-direction: column;
+     justify-content: center;
+     /* align-items: center; */
 }
-.section3 .subscribe-container .header {
-    margin-right: 10px; 
+.subscribe-container .container{
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;/
 }
 
-.subscribe-container h1{
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-.section3 .subscribe-container .input-group input {
-    margin-right: 0;
-}
-
-.form-control {
+ .subscribe-container .form-control {
     width: 60%;
-    padding: 10px;
-    border: none;
+    /* margin-bottom: 10px; */
+}
+.subscribe .header{
+    /* padding-right: 100px; */
+    padding-left: 0;
+    font-size: 18px;
 }
 
 .primary {
@@ -253,7 +292,6 @@ body{
     color: white;
     border: none;
     padding: 10px 20px;
-
 }
 .section3 .pricing{
     display: flex;
@@ -285,7 +323,6 @@ body{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: calc(53.33%  -10px);
-    /* border-color: #007bff; */
     border-color: 2px #007bff;
     border: 1px #007bff;
 }
@@ -297,7 +334,7 @@ body{
 .section3 button{
     background-color: #3498db;
     color: white;
-    padding: 15px 50px;
+    padding: 15px 70px;
     border: none;
     border-radius: 5px;
     margin-top: 30px;
@@ -306,46 +343,34 @@ body{
     font-size: 24px;
     font-weight: bold;
     padding-bottom: 15px;
-
+  }
+  .right-tick ion-icon {
+    font-size: 34px;
+    color: #01a807;
+  }
+  
+  .grey-tick ion-icon {
+    font-size: 34px;
+    color: #BDBDBD;
+  }
+  .pricing-options {
+    display: flex;
+    grid-template-columns: 13% 98%;
+    margin: 4%;
+    text-align: left;
+    align-items: center;
+  }
+  .pricing-options ion-icon {
+    font-size: 34px;
   }
 
-.custom-checkbox-list {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-}
-
-.custom-checkbox-list li {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.custom-checkbox[type="checkbox"] {
-    appearance: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid #3498db;
-    background-color: white;
-    margin-right: 10px;
-    outline: none;
-}
-.custom-checkbox:nth-child(-n+3) {
-    border-color: #4CAF50; 
-}
-
-.custom-checkbox:nth-child(n+4) {
-    border-color: #ccc;
-}
+/* SECTION4 */
   
 .section4 {
     background-color: hsl(226, 43%, 10%);
     height: 80vh;
     color: white;
     height: 100vh;
-
-
 }
 .section4 .container{
     display: flex;
@@ -362,12 +387,10 @@ body{
 .section4 h1{
     font-size: 35px;
 }
-.section4 img{
-}
 
+/* SECTION 5 */
 .section5{
     width: 100vw;
-    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -388,7 +411,6 @@ body{
 }
 
 .book-appointment-image {
-    /* max-width: 50%; */
     flex: 1;
 
 }
@@ -404,7 +426,6 @@ body{
     display: flex;
     flex-direction: column; 
     align-items: center;
-    /* margin-bottom: 250px; */
 }
 
 .book-appointment-form h1 {
@@ -449,12 +470,43 @@ button.primary:hover {
         margin-bottom: 50px; 
 }
 
+/* FOOTER */
 .footer{
-    border: 2px solid blue;
+    border: 2px solid;
     display: flex;
-    margin-top: auto; /* Push the footer to the bottom */
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 100px;
+    height: 70vh;
 }
+ .footer .container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;    
+}
+
+.container .footers {
+    flex: 1; 
+    margin: 0 10px; 
+    padding: 10px;  
+    font-size: 14px;
+  }
+  
+  .container .footers ol {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .container .footers li {
+    margin-bottom: 15px;
+    color: #9C9C9C;
+  }
+  .footers h2{
+   font-size: 16px;
+   padding-bottom: 25px;
+   color: #1A2039;
+}
+  
+ 
+ 
