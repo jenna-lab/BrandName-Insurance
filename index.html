@@ -162,13 +162,20 @@
               <h2>FREE</h2>
               <p>Organize across all <br> apps by hand</p>
               <p class="price">$0/month</p>
-              <ul>
+              <!-- <ul>
                 <li>Unlimited product updates</li>
                 <li>Unlimited product updates</li>
                 <li>Unlimited product updates</li>
                 <li>1GB Cloud Storage</li>
                 <li>Email and community support</li>
-              </ul>
+              </ul> -->
+              <ul class="custom-checkbox-list">
+                <li><input type="checkbox" id="item1" class="custom-checkbox"><label for="item1">Unlimited product updates</label></li>
+                <li><input type="checkbox" id="item2" class="custom-checkbox"><label for="item2">Unlimited product updates</label></li>
+                <li><input type="checkbox" id="item3" class="custom-checkbox"><label for="item3">Unlimited product updates</label></li>
+                <li><input type="checkbox" id="item4" class="custom-checkbox"><label for="item4">1GB Cloud Storage</label></li>
+                <li><input type="checkbox" id="item5" class="custom-checkbox"><label for="item5">Email and community <br> support</label></li>
+            </ul>
 
               <button>Try for free</button>
             </div>
@@ -177,13 +184,20 @@
               <h2>STANDARD</h2>
               <p>Organize across all <br> apps by hand</p>
               <p class="price">$9.99/month</p>
-              <ul>
+              <!-- <ul>
                 <li>Unlimited product updates</li>
                 <li>Unlimited product updates</li>
                 <li>Unlimited product updates</li>
                 <li>1GB Cloud Storage</li>
                 <li>Email and community support</li>
-              </ul>
+              </ul> -->
+              <ul class="custom-checkbox-list">
+                <li><input type="checkbox" id="item1" class="custom-checkbox"><label for="item1">Unlimited product updates</label></li>
+                <li><input type="checkbox" id="item2" class="custom-checkbox"><label for="item2">Unlimited product updates</label></li>
+                <li><input type="checkbox" id="item3" class="custom-checkbox"><label for="item3">Unlimited product updates</label></li>
+                <li><input type="checkbox" id="item4" class="custom-checkbox"><label for="item4">1GB Cloud Storage</label></li>
+                <li><input type="checkbox" id="item5" class="custom-checkbox"><label for="item5">Email and community <br> support</label></li>
+            </ul>
 
               <button>Try for free</button>
             </div>
@@ -192,13 +206,20 @@
               <h2>PREMIUM</h2>
               <p>Organize across all <br> apps by hand</p>
               <p class="price">$19.99/month</p>
-              <ul>
+              <!-- <ul>
                 <li>Unlimited product updates</li>
                 <li>Unlimited product updates</li>
                 <li>Unlimited product updates</li>
                 <li>1GB Cloud Storage</li>
                 <li>Email and community support</li>
-              </ul>
+              </ul> -->
+              <ul class="custom-checkbox-list">
+                <li><input type="checkbox" id="item1" class="custom-checkbox"><label for="item1">Unlimited product updates</label></li>
+                <li><input type="checkbox" id="item2" class="custom-checkbox"><label for="item2">Unlimited product updates</label></li>
+                <li><input type="checkbox" id="item3" class="custom-checkbox"><label for="item3">Unlimited product updates</label></li>
+                <li><input type="checkbox" id="item4" class="custom-checkbox"><label for="item4">1GB Cloud Storage</label></li>
+                <li><input type="checkbox" id="item5" class="custom-checkbox"><label for="item5">Email and community <br> support</label></li>
+            </ul>
 
               <button>Try for free</button>
             </div>
@@ -206,25 +227,60 @@
         </div>
     </section>
     <section class="section4">
-        <div>
+        <div class="container">
+            <div class="text">
             <h1>
                 We Have Branches All <br> Over The World
             </h1>
             <p>
                 The gradual accumualtion of information aout atomic and small scale behavior during the first quater of thhe 20th century,which gave some indications about how small things do behave,produces an increasing confusion which was Hinsenberg,and Born
             </p>
-            <img src="./images/pingwig.png">
+           </div>
+            <div>
+                <img src="./images/pingwig.png">
+            </div>
         </div>
-        <form>
-            <h1>
-                Book Appointment
-            </h1>
-            <img src="./images/contact.png">
-        </form>
     </section>
-    <footer class="footer">
-      <div>
-        <!-- <img src="./images/hero.png" alt=""> -->
+
+    <section5 class="section5" >
+        <div  class="book-appointment-card">
+            <div class="book-appointment-image">
+                <img src="./images/contact.png" alt="Contact Image">
+            </div>
+            <div class="book-appointment-form">
+                <h1>Book Appointment</h1>
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" placeholder="Full Name *" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Department *</label>
+                        <select id="department" required>
+                            <option value="">Please Select</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time *</label>
+                        <select id="time" required>
+                            <option value="">4:00 Available</option>
+                            <option value="">Please Select</option>
+                        </select>
+                    </div>
+                    <button class="primary" type="submit">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+
+       
+    </section>
+    <div class="consulting">
         <h1>
             Consulting Agency Fo Your Business
         </h1>
@@ -233,8 +289,9 @@
             <button>Contact Us</button>
         </div>
       </div>
+    <footer class="footer">
 
-      <div>
+      <div class="container">
         <div>
             <h2>Company Info</h2>
             <ol>
