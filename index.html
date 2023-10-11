@@ -12,6 +12,7 @@
 </head>
 <body>
     <section class="section1">
+        <!-- <img src="./images/hero.png"> -->
      <div class="navbar">
        <div class="navs">
          <ul>
@@ -28,7 +29,7 @@
        </div>
      </div>
      <div class="section1-text">
-        <h3 style="font-size:40px;">
+        <h3>
             We ensure A Best <br> Insurance Service
         </h3>
         <h2>
@@ -157,23 +158,22 @@
             </div> 
         </div>
         </div>
-        <section class="subscribe">
     <div class="subscribe-container">
         <div class="container">
             <div class="header">
                 <h1>Subscribe For Latest <br> Newsletter</h1>
             </div>
             <div class="form-container">
-                <form action="">
-                    <div class="input-group">
-                        <input type="text" name="" id="" class="form-control" placeholder="Enter your email">
-                        <button type="submit" class="primary">Subscribe</button>
-                    </div>
-                </form>
+                 <input
+                type="email"
+                name="subscription-email"
+                id="subscription-email"
+                placeholder="Your Email"
+              />
+              <input type="button" id="btnSubscribe" value="Subscribe" />
             </div>  
-                </div>
         </div>
-    </section>
+     </div>
 
         <div class="pricing">
             <h1>Pricing</h1>
@@ -184,7 +184,11 @@
             <div class="pricing-card">
               <h2>FREE</h2>
               <p>Organize across all <br> apps by hand</p>
-              <p class="price">$0/month</p>
+              <!-- <p class="price">$0/month</p> -->
+              <h1>
+                0 &nbsp;<span style="font-size: medium"
+                  ><sup>$</sup><sub>Per Month</sub></span>
+              </h1>
             <ul>
                 <li class="pricing-options right-tick"><ion-icon name="checkmark-circle"></ion-icon>Unlimited product updates</li>
                 <li class="pricing-options right-tick"><ion-icon name="checkmark-circle"></ion-icon>Unlimited product updates</li>
@@ -199,7 +203,11 @@
             <div class="pricing-card featured">
               <h2>STANDARD</h2>
               <p>Organize across all <br> apps by hand</p>
-              <p class="price">$9.99/month</p>
+              <h1>
+                9.99 &nbsp;<span style="font-size: medium"
+                  ><sup>$</sup><sub>Per Month</sub></span>
+              </h1>
+              <!-- <p class="price">$9.99/month</p> -->
             <ul>
                 <li class="pricing-options right-tick"><ion-icon name="checkmark-circle"></ion-icon>Unlimited product updates</li>
                 <li class="pricing-options right-tick"><ion-icon name="checkmark-circle"></ion-icon>Unlimited product updates</li>
@@ -214,7 +222,11 @@
             <div class="pricing-card">
               <h2>PREMIUM</h2>
               <p>Organize across all <br> apps by hand</p>
-              <p class="price">$19.99/month</p>  
+              <!-- <p class="price">$19.99/month</p>   -->
+              <h1>
+                19.99 &nbsp;<span style="font-size: medium"
+                  ><sup>$</sup><sub>Per Month</sub></span>
+              </h1>
             <ul>
                 <li class="pricing-options right-tick"><ion-icon name="checkmark-circle"></ion-icon>Unlimited product updates</li>
                 <li class="pricing-options right-tick"><ion-icon name="checkmark-circle"></ion-icon>Unlimited product updates</li>
@@ -250,7 +262,7 @@
             </div>
             <div class="book-appointment-form">
                 <h1>Book Appointment</h1>
-                <form action="">
+                <form action="" class="form">
                     <div class="form-group">
                         <label for="name">Name *</label>
                         <input type="text" id="name" placeholder="Full Name *" required>
@@ -279,17 +291,30 @@
             </div>
         </div>
 
-        <!-- <div class="consulting">
-            <h1>
-                Consulting Agency Fo Your Business
-            </h1>
-            <p>the quick forx jumps over the lazy dog</p>
-            <div>
-                <button>Contact Us</button>
-            </div>
-          </div> -->
+       
     </section>
-   
+    <div class="consultingg">
+      <div class="consulting">
+        <div class="text" style="margin-left: 70px;">
+            <h1 style="font-size: 18px;">
+                Consulting Agency For Your Business
+            </h1>
+            <p style="font-size: 14px;">the quick forx jumps over the lazy dog</p>
+        </div>
+            <div class="button">
+                <button     style="
+                background-color: #23a6f0;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                margin-right:40px;">
+                Contact Us
+            </button>
+            </div>
+          </div> 
+        </div>
+    
     <footer class="footer">
 
       <div class="container">
@@ -336,13 +361,20 @@
         <div class="footers">
             <h2> Get In Touch</h2>
             <ol>
-                <li> (480) 555-0103</li>
-                <li>4517 Washington Ave.</li>
-                <li>debra.holt@example.com</li>
+                <li>
+                    <ion-icon id="svg" name="call-outline"></ion-icon> (480) 555-0103
+                </li>
+                <li>
+                    <ion-icon id="svg" name="location-outline"></ion-icon>4517 Washington Ave.
+                </li>
+                <li>
+                    <ion-icon id="svg" name="mail-outline"></ion-icon>debra.holt@example.com
+                </li>
             </ol>
         </div>
       </div>
     </footer>
+  
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
