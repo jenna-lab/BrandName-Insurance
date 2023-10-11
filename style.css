@@ -400,6 +400,7 @@ body{
     padding-top: 20px;
 }
 
+
 /* SECTION 5 */
 .section5{
     width: 100vw;
@@ -539,6 +540,14 @@ button.primary:hover {
   .consultingg{
     margin: 30px;
   }
+  .consulting button{
+                background-color: #23a6f0;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                margin-right:40px;
+  }
 
 @media screen and (max-width:450px) {
     body{
@@ -603,7 +612,7 @@ button.primary:hover {
     text-align: center;
     justify-content: center;
     position: relative;
-    top: -150px;
+    top: -100px;
     height: 30vh;
 }
 
@@ -643,7 +652,7 @@ button.primary:hover {
 .section3{
     background-color: #ddd;
     width: 100%;
-    height: 350vh;
+    height: 900%;
    }
    .section3 .text h1{
     font-size: 30px;
@@ -658,22 +667,21 @@ button.primary:hover {
     display: flex;
     flex-direction: column;
     height: 150vh;
+    padding-top: 30px;
 }
 .section3 .column{
     display: flex;
     flex-direction: column;
     width: 50%; 
 }
-.section3 .rating{
-    padding-top: 20px;
-}
+
 .star {
     margin-right: 12px; 
 }
 
 .section3 .icons-container{
-    display: flex;
-    padding-top:20px;
+    /* display: flex; */
+    /* padding-top:20px; */
 }
 
 .section3 .icons{
@@ -701,62 +709,180 @@ button.primary:hover {
     
 }
 
-.section3 .pricing p{
-    text-align: center;
-    padding: 20px;
-}
-
 .section3 .pricing-cards{
    display: flex;
    flex-direction: column;
-   width: 100%;
-  
+   width: 100%; 
+   align-items: center;
 }
 
 .section3 .pricing-card{
-width: 50%;  
-height: 20vh;
-
+width: 60%;
+height: 70vh;
 }
-
-
+.pricing-card ul{
+    font-size: 12px;
+}
+.pricing-card h2{
+    font-size: 18px;
+    padding-bottom: 0;
+}
+.pricing-card p{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
 .section3 button{
-    background-color: #3498db;
-    color: white;
-    padding: 15px 70px;
-    border: none;
-    border-radius: 5px;
+    padding: 8px 60px;
     margin-top: 30px;
 }
 .price {
-    font-size: 24px;
-    font-weight: bold;
-    padding-bottom: 15px;
+    font-size: 10px;
+    padding-bottom: 30px;
   }
   .right-tick ion-icon {
-    font-size: 34px;
-    color: #01a807;
+    font-size: 24px;
   }
   
   .grey-tick ion-icon {
-    font-size: 34px;
-    color: #BDBDBD;
+    font-size: 24px;
   }
   .pricing-options {
-    display: flex;
-    grid-template-columns: 13% 98%;
-    margin: 4%;
-    text-align: left;
-    align-items: center;
+    margin: 2%;
   }
   .pricing-options ion-icon {
-    font-size: 34px;
+    font-size: 24px;
   }
 
 
+/* SECTION4 */
+  
+.section4 {
+    width: 100%;
+    display: flex;
+}
+.section4 .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.section4 .text{
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 h1{
+    font-size: 20px;
+}
+.section4 p{
+    font-size: 14px;
+    padding-top: 10px;
+}
+.section4 img{
+    width: 80%;
+    padding-bottom: 120px;
+    padding-left: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECTION 5 */
+.section5{
+    width: 100%;
+}
+
+.book-appointment-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -100px;
+}
+.section5 .form{
+    /* width: 100%; */
+
+}
+.book-appointment-form {
+    width: 100%;
+}
+.book-appointment-image img {
+    height: 100vh;
+}
+
+.book-appointment-form h1 {
+    font-size: 16px;
+}
+
+.section5 .form-group {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+button.primary {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.section5 .consultingg{
+        text-align: center;
+        margin-top: 0; 
+        width: 100%;
+}
+.consulting{
+display: flex;
+}
+.consulting .text{
+    margin: 0;
+}
+.consulting .text h1{
+    font-size: 12px;
+}
+.consulting .text p{
+    font-size: 10px;
+}
 
 
+/* FOOTER */
+.footer{
+    width: 100%;
+    margin: 10px;
+}
+ .footer .container{
+    width: 100%; 
+}
 
+.container .footers {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container .footers ol {
+    text-align: justify;
+  }
+  .footers h2{
+   font-size: 10px;
+}
+.consulting button{
+    padding: 10px 40px;
+    margin-right: 10px;
+}
 }
 
  
