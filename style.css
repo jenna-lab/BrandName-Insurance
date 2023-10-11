@@ -294,13 +294,12 @@ body{
     padding-top: 30px;
 }
 .section3 .pricing-cards h1 {
-
     color: #23a6f0 !important;
   
   }
 
 .section3 .pricing h1{
-    font-size: 30px;
+    font-size: 40px;
 }
 .section3 .pricing p{
     text-align: center;
@@ -491,24 +490,17 @@ button.primary:hover {
     background-color: #0056b3;
 }
 
-.section5 .consulting{
-        text-align: center;
-        margin-bottom: 50px; 
-}
 
 /* FOOTER */
 .footer{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 100px;
-    height: 30vh;
+    justify-content: space-evenly;
 }
  .footer .container{
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;    
+    width: 100%;   
+    margin-left: 30px; 
 }
 
 .container .footers {
@@ -532,10 +524,15 @@ button.primary:hover {
    padding-bottom: 25px;
    color: #1A2039;
 }
-  .consultingg .button{
+.consulting{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin-left: 20px;
+}
 
+  .consulting h1{
+    font-size: 22px;
+    padding-bottom: 10px;
   }
   .consultingg{
     margin: 30px;
@@ -882,6 +879,11 @@ display: flex;
 .consulting button{
     padding: 10px 40px;
     margin-right: 10px;
+}
+.consulting{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 }
 
