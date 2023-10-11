@@ -1,8 +1,6 @@
 body{
     font-family: Poppins,sans-serif;
     overflow-x: hidden;
-    /* display: flex; */
-    /* flex-direction: column; */
 }
 
 *{
@@ -21,56 +19,48 @@ body{
         background-position: center; 
         color: white;
 }
-.navbar{
+.navbar {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 10%;
-}
-
-.navs{
-    display: flex;
-    width: 40%;
-    height: 100%;
-    color: white;
-    align-items: center;
-}
-
-.navs h3{
-    color: white;
-    font-weight: 700;
-}
-
-.navbar ul{
-    width: 100%;
     justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.brand {
+    font-size: 24px;
+    padding-left: 60px;
+}
+
+.navs ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar ul li{
-    font-weight: lighter;
+.navs li {
+    margin-right: 80px;
 }
 
-.sidebar{
+.sidebar {
     display: flex;
-    width: 40%;
-    justify-content: flex-end;
     align-items: center;
-    justify-content: space-around;
+}
+
+.login-button {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 .member-button {
-    background-color: #00BFFF;
-    color: white;
-    padding: 15px 20px; 
-    font-size: 15px; 
+    background-color:#007bff;
+    color: #fff;
+    padding: 10px 20px;
     border: none;
-    gap: 30px;
-}
-.login-button{
-    font-size: 18px;
-    margin-left: 300px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .section1-text{
@@ -227,7 +217,7 @@ body{
 
 .section3{
  background-color: #ddd;
- width: 100vw;
+ width: 100%;
  height: 290vh;
 }
 
@@ -436,7 +426,6 @@ body{
 }
 .section5 .form{
     width: 100%;
-    /* padding: 20px; */
 }
 
 .book-appointment-image {
@@ -449,7 +438,6 @@ body{
     display: flex;
     flex-direction: column; 
     align-items: center;
-    /* max-width: 300px; */
 }
 .book-appointment-image img {
     max-width: 100%; 
@@ -552,16 +540,222 @@ button.primary:hover {
     margin: 30px;
   }
 
-@media screen and (max-width:360px) {
-  .navs{
+@media screen and (max-width:450px) {
+    body{
+        padding: 10px;
+    }
+   .section1{
+    display: flex;
+    flex-direction: column;
+   
+   }
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.brand {
+    padding: 0;
+    font-size: 16px;
+}
+
+.navs ul {
     display: none;
-  }
-   h1{
-    font-size: 10px;
-  }
-  h2{
+}
+
+.login-button {
+    font-size: 14px;
+}
+.sidebar{
+    padding-right: 20px;
+}
+
+.section1-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; 
+    text-align: center; 
+
+}
+.section1-text h3{
+    font-size:30px;
+}
+.section1 h2{
+    font-size: 14px;
+}
+
+.round-button{
+    padding: 5px 10px;
+}
+
+
+/* SECTION 2 */
+.section2 .subs2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section2 .text{
+    width: 60%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: -150px;
+    height: 30vh;
+}
+
+.section2 .icon{
+    text-align: left;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+.subs2 h1{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.section2 .subs3 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 400px;
+}
+.section2 .text2{
+    width: 70%;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.text2 .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 10px;
+}
+.text2 h1{
     font-size: 20px;
+}
+/* SECTION 3 */
+.section3{
+    background-color: #ddd;
+    width: 100%;
+    height: 350vh;
+   }
+   .section3 .text h1{
+    font-size: 30px;
+}
+.section3 p{
+    font-size: 12px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.section3 .columns {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+}
+.section3 .column{
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+}
+.section3 .rating{
+    padding-top: 20px;
+}
+.star {
+    margin-right: 12px; 
+}
+
+.section3 .icons-container{
+    display: flex;
+    padding-top:20px;
+}
+
+.section3 .icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.subscribe-container{
+    width: 100%;
+    margin: 0;
+}
+.subscribe-container .container{
+    display: flex;
+    flex-direction: column;
+}
+
+ .header h1{
+    font-size: 18px;
+}
+.form-container{
+}
+
+.section3 .pricing{
+    
+}
+
+.section3 .pricing p{
+    text-align: center;
+    padding: 20px;
+}
+
+.section3 .pricing-cards{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+  
+}
+
+.section3 .pricing-card{
+width: 50%;  
+height: 20vh;
+
+}
+
+
+.section3 button{
+    background-color: #3498db;
+    color: white;
+    padding: 15px 70px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 15px;
   }
+  .right-tick ion-icon {
+    font-size: 34px;
+    color: #01a807;
+  }
+  
+  .grey-tick ion-icon {
+    font-size: 34px;
+    color: #BDBDBD;
+  }
+  .pricing-options {
+    display: flex;
+    grid-template-columns: 13% 98%;
+    margin: 4%;
+    text-align: left;
+    align-items: center;
+  }
+  .pricing-options ion-icon {
+    font-size: 34px;
+  }
+
+
+
+
 
 }
 
